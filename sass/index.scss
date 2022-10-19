@@ -1,0 +1,19 @@
+// Normalize
+// @import '~/node_modules/modern-normalize/modern-normalize.css';
+
+// Utils
+@import './utils/fonts';
+@import './utils/vars';
+@import './utils/mixin';
+@import './utils/adaptive-mixin';
+@import './utils/visually-hidden';
+
+// Base styles
+@import './base/reset';
+@import './base/global';
+
+// Components
+// Header
+@import './components/hero';
+@import './components/sidebar';
+@import './components/main-content';
