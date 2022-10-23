@@ -1,56 +1,38 @@
+// sidebar section
 .sidebar {
     padding: 24px;
-    max-width: 412px;
+    width: 412px;
     border-radius: 0 60px 0 0;
     background-color: var(--grey-color);
     position: relative;
 }
 
 .contact__title {
-    // Непотрібні
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 24px;
-    // line-height: 29px;
-    // letter-spacing: -0.08em;
-    // color: var(--black-color);
-
-    // ----------------------
-
     padding-bottom: 12px;
-    border-bottom: 2px solid #1E1E1E;
+    border-bottom: 2px solid var(--black-color);
 }
 
+// Sidebar elements
+.sidebar__text-wrapper:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+// sidebar ul list
 .sidebar__item {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.06em;
 
-    // Непотрібні
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // line-height: 24px;
-    // color: var(--black-color);
+    &:first-child {
+        padding-top: 12px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
 }
 
-.sidebar__item:first-child {
-    padding-top: 12px;
-}
-
-.sidebar__item:not(:last-child) {
-    margin-bottom: 12px;
-}
-
-.sidebar__text-wrapper {
-    max-width: 412px;
-}
-
-.sidebar__text-wrapper:not(:last-child) {
-    margin-bottom: 24px;
-}
-
-
+// contacts, follow me list
 .address__link,
 .social__link {
     display: flex;
@@ -60,4 +42,13 @@
 .address__icon,
 .social__icon {
     margin-right: 12px;
+}
+
+// Tech and soft skill list
+.skill__list {
+    list-style: inside;
+}
+
+.skill__item::marker {
+    color: var(--orange-color);
 }

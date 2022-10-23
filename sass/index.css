@@ -30,6 +30,7 @@
   --black-color: #212121;
   --white-color: #ffffff;
   --grey-color: #D9D9D9;
+  --orange-color: #FB6D3A;
 }
 
 .visually-hidden {
@@ -92,11 +93,12 @@ address {
 }
 
 .main {
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .main_content {
+  background: linear-gradient(153.67deg, #F5F5F9 12.68%, #E4E8EE 87.63%);
   box-shadow: 0px 8px 15px rgba(142, 155, 174, 0.5), 0px 31px 60px rgba(0, 0, 0, 0.25), inset 3px 3px 8px rgba(255, 255, 255, 0.5);
   margin-top: 26px;
   margin-bottom: 26px;
@@ -148,11 +150,11 @@ h4 {
   margin: 0 auto;
 }
 
-.hero__section {
+.user__section {
   padding: 46px 0 24px 24px;
 }
 
-.hero__container {
+.user__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -163,25 +165,28 @@ h4 {
   border-radius: 193px 0px 0px 193px;
 }
 
-.hero__fullname {
-  font-family: "Montserrat";
-  font-style: normal;
+.user__img {
+  border-radius: 50%;
+}
+
+.user__text-wraper {
+  margin: auto;
+}
+
+.user__fullname {
   font-weight: 800;
-  font-size: 96px;
-  line-height: 117px;
-  /* identical to box height */
+  font-size: 76px;
   letter-spacing: -0.04em;
-  color: #1E1E1E;
 }
 
 .user__pisition {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .sidebar {
   padding: 24px;
-  max-width: 412px;
+  width: 412px;
   border-radius: 0 60px 0 0;
   background-color: var(--grey-color);
   position: relative;
@@ -189,7 +194,11 @@ h4 {
 
 .contact__title {
   padding-bottom: 12px;
-  border-bottom: 2px solid #1E1E1E;
+  border-bottom: 2px solid var(--black-color);
+}
+
+.sidebar__text-wrapper:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .sidebar__item {
@@ -197,21 +206,11 @@ h4 {
   font-size: 20px;
   letter-spacing: -0.06em;
 }
-
 .sidebar__item:first-child {
   padding-top: 12px;
 }
-
 .sidebar__item:not(:last-child) {
   margin-bottom: 12px;
-}
-
-.sidebar__text-wrapper {
-  max-width: 412px;
-}
-
-.sidebar__text-wrapper:not(:last-child) {
-  margin-bottom: 24px;
 }
 
 .address__link,
@@ -225,7 +224,15 @@ h4 {
   margin-right: 12px;
 }
 
-.contet {
+.skill__list {
+  list-style: inside;
+}
+
+.skill__item::marker {
+  color: var(--orange-color);
+}
+
+.content-wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 24px;
@@ -246,12 +253,12 @@ h4 {
   font-size: 20px;
 }
 
-.about-user__section {
-  padding-top: 0;
+.about-user__container .desc {
+  margin-top: 12px;
 }
 
-.hero__img {
-  border-radius: 50%;
+.about-user__section {
+  padding-top: 0;
 }
 
 .education__item {
@@ -284,8 +291,9 @@ h4 {
 }
 
 .organization {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
+  color: var(--orange-color);
 }
 
 .specialized {
@@ -311,13 +319,13 @@ h4 {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 540px;
+  max-width: 524px;
   margin: auto;
   gap: 12px;
 }
 
 .project__item {
-  width: 258px;
+  width: 256px;
   height: 152px;
   border-radius: 20px;
 }
@@ -335,7 +343,7 @@ h4 {
 }
 
 .project__link:hover,
-.project__link:focus-within {
+.project__link:focus {
   background: #EBF3FF;
   box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #B4C1D5;
 }
@@ -353,8 +361,7 @@ h4 {
           animation: overlay-hover;
 }
 
-.preview__thumb-img {
-  overflow: hidden;
+.preview__text-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -369,7 +376,60 @@ h4 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project__link:hover .preview__thumb-img,
-.project__link:focus .preview__thumb-img {
+.project__link:hover .preview__text-overlay,
+.project__link:focus .preview__text-overlay {
+  overflow: scroll;
   transform: translateY(0%);
+}
+
+.preview__text-overlay::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+.preview__text-overlay::-webkit-scrollbar {
+  width: 1px;
+  background-color: transparent;
+}
+
+.project__list-min {
+  margin-top: 12px;
+}
+
+.project__item-min {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.23;
+  min-width: 295px;
+}
+.project__item-min::marker {
+  font-weight: bold;
+}
+.project__item-min:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.project-name__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.project-name {
+  font-weight: 600;
+  font-size: 22px;
+  margin-right: 24px;
+}
+
+.project-skill {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
+
+.project__desc {
+  font-size: 18px;
 }/*# sourceMappingURL=index.css.map */

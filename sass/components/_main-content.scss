@@ -1,11 +1,11 @@
-.contet {
+.content-wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
 }
 
-
 .about__container {
+
     padding: 24px 26px;
     max-width: 815px;
     border-radius: 60px;
@@ -21,15 +21,15 @@
     font-size: 20px;
 }
 
+.about-user__container .desc {
+    margin-top: 12px;
+}
 
 // ABOUT USER 
 .about-user__section {
     padding-top: 0;
 }
 
-.hero__img {
-    border-radius: 50%;
-}
 
 //EDUCATION
 .education__item {
@@ -62,8 +62,9 @@
 }
 
 .organization {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 22px;
+    color: var(--orange-color);
 }
 
 .specialized {
@@ -91,14 +92,14 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    max-width: 540px;
+    max-width: 524px;
 
     margin: auto;
     gap: 12px;
 }
 
 .project__item {
-    width: 258px;
+    width: 256px;
     height: 152px;
     border-radius: 20px;
 }
@@ -118,11 +119,10 @@
 }
 
 .project__link:hover,
-.project__link:focus-within {
+.project__link:focus {
     background: #EBF3FF;
     box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #B4C1D5;
 }
-
 
 .project__title {
     margin-bottom: 12px;
@@ -137,9 +137,7 @@
     animation: overlay-hover;
 }
 
-.preview__thumb-img {
-    overflow: hidden;
-
+.preview__text-overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -156,7 +154,71 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project__link:hover .preview__thumb-img,
-.project__link:focus .preview__thumb-img {
+.project__link:hover .preview__text-overlay,
+.project__link:focus .preview__text-overlay {
+    overflow: scroll;
     transform: translateY(0%);
+}
+
+.preview__text-overlay::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 transparent;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.preview__text-overlay::-webkit-scrollbar {
+    width: 1px;
+    background-color: transparent;
+}
+
+// projects
+.project__container-min {}
+
+.container {}
+
+.title {}
+
+.project__list-min {
+    margin-top: 12px;
+}
+
+.project__item-min {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.23;
+    min-width: 295px;
+
+    &::marker {
+        font-weight: bold;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.project-name__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.project-name {
+    font-weight: 600;
+    font-size: 22px;
+    margin-right: 24px;
+}
+
+.project-skill {
+    font-weight: 500;
+    font-size: 14px;
+
+    padding: 5px;
+    border-radius: 10px;
+
+    color: var(--white-color);
+    background-color: var(--orange-color);
+}
+
+.project__desc {
+    font-size: 18px;
 }

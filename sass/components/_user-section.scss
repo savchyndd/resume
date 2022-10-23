@@ -1,0 +1,38 @@
+// User section 
+.user__section {
+    padding: 46px 0 24px 24px;
+}
+
+.user__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px;
+    margin: 0 auto;
+
+    padding: 30px;
+    background: var(--grey-color);
+    border-radius: 193px 0px 0px 193px;
+}
+
+// User imgage
+.user__img {
+    border-radius: 50%;
+}
+
+// User text
+.user__text-wraper {
+    margin: auto;
+}
+
+.user__fullname {
+    font-weight: 800;
+    font-size: 76px;
+    letter-spacing: -0.04em;
+}
+
+.user__pisition {
+    font-weight: 500;
+    font-size: 28px;
+}

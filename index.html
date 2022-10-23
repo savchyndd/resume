@@ -5,351 +5,462 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dmytro Savchyn CV</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="stylesheet" href="./sass/index.css" />
   </head>
-  <body>
-    <header></header>
-    <main class="main">
-      <div class="main_content">
-        <section class="hero__section">
-          <div class="hero__container">
-            <img
-              class="hero__img"
-              src="./img/user.jpg"
-              alt="Dmytro Savchyn"
-              width="200"
-              height="200"
-            />
-            <div class="hero__text-wraper">
-              <h1 class="hero__fullname">Dmytro Savchyn</h1>
-              <p class="user__pisition">Junior Front-End Developer</p>
+  <body class="main">
+    <div class="content__container main_content">
+      <header></header>
+      <main>
+        <div class="main__container">
+          <section class="user__section">
+            <div class="user__container">
+              <img
+                class="user__img"
+                src="./img/user.jpg"
+                alt="Dmytro Savchyn"
+                width="200"
+                height="200"
+              />
+              <div class="user__text-wraper">
+                <h1 class="user__fullname">Dmytro Savchyn</h1>
+                <p class="user__pisition">Junior Front-End Developer</p>
+              </div>
             </div>
-          </div>
-        </section>
-        <!-- side bar -->
-        <div class="contet">
-          <aside class="sidebar">
-            <div class="sidebar__text-wrapper">
-              <h2 class="contact__title">CONTACTS</h2>
-              <address>
-                <ul class="address__list">
-                  <li class="address__item sidebar__item">
-                    <a href="tel:+380683060214" class="address__link">
-                      <svg class="address__icon" width="24" height="24">
-                        <use href="./img/icons.svg#icon-phone"></use>
+          </section>
+          <!-- side bar -->
+          <div class="content-wrapper">
+            <aside class="sidebar">
+              <div class="sidebar__text-wrapper">
+                <h2 class="contact__title">CONTACTS</h2>
+                <address>
+                  <ul class="address__list">
+                    <li class="address__item sidebar__item">
+                      <a href="tel:+380683060214" class="address__link">
+                        <svg class="address__icon" width="24" height="24">
+                          <use href="./img/icons.svg#icon-phone"></use>
+                        </svg>
+                        +380 683 060 214
+                      </a>
+                    </li>
+
+                    <li class="address__item sidebar__item">
+                      <a href="mailto:savchyndd@gmail.com" class="address__link">
+                        <svg class="address__icon" width="24" height="24">
+                          <use href="./img/icons.svg#icon-email"></use>
+                        </svg>
+                        savchyndd@gmail.com
+                      </a>
+                    </li>
+                    <li class="address__item sidebar__item">
+                      <a href="" class="address__link">
+                        <svg class="address__icon" width="24" height="24">
+                          <use href="./img/icons.svg#icon-location"></use>
+                        </svg>
+                        Spaine
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+              <div class="sidebar__text-wrapper">
+                <h2 class="contact__title">FOLOW ME</h2>
+                <ul class="social__list">
+                  <li class="social__item sidebar__item">
+                    <a href="https://www.linkedin.com/in/savchyndd/" class="social__link">
+                      <svg class="social__icon" width="24" height="24">
+                        <use href="./img/icons.svg#icon-linkedin"></use>
                       </svg>
-                      +380 683 060 214
+                      LinkedIn
                     </a>
                   </li>
-                  <li class="address__item sidebar__item">
-                    <a href="mailto:savchyndd@gmail.com" class="address__link">
-                      <svg class="address__icon" width="24" height="24">
-                        <use href="./img/icons.svg#icon-email"></use>
+                  <li class="social__item sidebar__item">
+                    <a href="https://github.com/savchyndd" class="social__link">
+                      <svg class="social__icon" width="24" height="24">
+                        <use href="./img/icons.svg#icon-github"></use>
                       </svg>
-                      exepml@gmail.com
-                    </a>
-                  </li>
-                  <li class="address__item sidebar__item">
-                    <a href="" class="address__link">
-                      <svg class="address__icon" width="24" height="24">
-                        <use href="./img/icons.svg#icon-location"></use>
-                      </svg>
-                      Spaine
+                      GitHub
                     </a>
                   </li>
                 </ul>
-              </address>
-            </div>
-            <div class="sidebar__text-wrapper">
-              <h2 class="contact__title">FOLOW ME</h2>
-              <ul class="social__list">
-                <li class="social__item sidebar__item">
-                  <a href="" class="social__link">
-                    <svg class="social__icon" width="24" height="24">
-                      <use href="./img/icons.svg#icon-linkedin"></use>
-                    </svg>
-                    LinkedIn
-                  </a>
-                </li>
-                <li class="social__item sidebar__item">
-                  <a href="" class="social__link">
-                    <svg class="social__icon" width="24" height="24">
-                      <use href="./img/icons.svg#icon-github"></use>
-                    </svg>
-                    GitHub
-                  </a>
-                </li>
-                <li class="social__item sidebar__item">
-                  <a href="" class="social__link">
-                    <svg class="social__icon" width="24" height="24">
-                      <use href="./img/icons.svg#icon-instagram"></use>
-                    </svg>
-                    Instagram
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="sidebar__text-wrapper">
-              <h2 class="contact__title">SKILLS</h2>
-              <ul class="skill__list">
-                <li class="skill__item sidebar__item">Web-development: HTML5, CSS3, JS.</li>
-                <li class="skill__item sidebar__item">Programming languages: Pascal, C++,</li>
-                <li class="skill__item sidebar__item">IDE: Delphi 7, Arduino, Android Studio.</li>
-                <li class="skill__item sidebar__item">Version control: GIT, Github</li>
-                <li class="skill__item sidebar__item">Graphics: Figma</li>
-              </ul>
-            </div>
-            <div class="sidebar__text-wrapper">
-              <h2 class="languages__title contact__title">LANGUAGES</h2>
-              <ul class="languages__list">
-                <li class="languages__item sidebar__item">Ukrainian - native;</li>
-                <li class="languages__item sidebar__item">Spanish - A1 (Elementary);</li>
-                <li class="languages__item sidebar__item">English - A1 (Elementary);</li>
-                <li class="languages__item sidebar__item">Russian - C2 (Proficiency);</li>
-              </ul>
-            </div>
-          </aside>
-          <div class="about__container">
-            <section class="section about-user__section">
-              <div class="container about-user__container">
-                <h2 class="title">ABOUT ME</h2>
-                <p class="desc">
-                  I love programming, solving a certain problem by writing code is very exciting and
-                  interesting. During my studies at college, institute I got acquainted with several
-                  programming languages and IDEs, chose the path of Full-Stack developer, and now I
-                  have studied Front-end developer tools. My goal is to learn JavaScript at a good
-                  enough level. I would like to work under the guidance of an experienced developer
-                  to gain practical experience.
-                </p>
               </div>
-            </section>
-            <section class="education__section section">
-              <div class="education__container container">
-                <h2 class="title">EDUCATION</h2>
-                <ul class="education__list">
-                  <li class="education__item">
-                    <div class="period__wrapper">
-                      <p class="period">Jan 2018 - Mar 2022</p>
-                      <ul class="position__list">
-                        <li class="position__item desc">Master’s (Juan 2021 - Mar 2022)</li>
-                        <li class="position__item desc">Bachelor’s (Juan 2019 - June 2021)</li>
+              <div class="sidebar__text-wrapper">
+                <h2 class="contact__title">Tech SKILLS</h2>
+                <ul class="skill__list">
+                  <li class="skill__item sidebar__item">HTML5</li>
+                  <li class="skill__item sidebar__item">CSS3 / SASS</li>
+                  <li class="skill__item sidebar__item">JavaScript</li>
+                  <li class="skill__item sidebar__item">Pascal</li>
+                  <li class="skill__item sidebar__item">GIT</li>
+                  <li class="skill__item sidebar__item">Github</li>
+                  <li class="skill__item sidebar__item">BEM</li>
+                  <li class="skill__item sidebar__item">Parcel</li>
+                  <li class="skill__item sidebar__item">IDE: Delphi 7, Arduino</li>
+                  <li class="skill__item sidebar__item">Figma</li>
+                </ul>
+              </div>
+              <div class="sidebar__text-wrapper">
+                <h2 class="contact__title">Soft SKILLS</h2>
+                <ul class="skill__list">
+                  <li class="skill__item sidebar__item">Сritical thinking</li>
+                  <li class="skill__item sidebar__item">Problem-solving</li>
+                  <li class="skill__item sidebar__item">Team Work</li>
+                  <li class="skill__item sidebar__item">Scrum</li>
+                  <li class="skill__item sidebar__item">Agile</li>
+                </ul>
+              </div>
+              <div class="sidebar__text-wrapper">
+                <h2 class="languages__title contact__title">LANGUAGES</h2>
+                <ul class="languages__list">
+                  <li class="languages__item sidebar__item">Ukrainian - native;</li>
+                  <li class="languages__item sidebar__item">Spanish - A1 (Elementary);</li>
+                  <li class="languages__item sidebar__item">English - A1 (Elementary);</li>
+                  <li class="languages__item sidebar__item">Russian - C2 (Proficiency);</li>
+                </ul>
+              </div>
+            </aside>
+            <div class="about__container">
+              <section class="section about-user__section">
+                <div class="container about-user__container">
+                  <h2 class="title">ABOUT ME</h2>
+                  <p class="desc">
+                    I love programming, solving a certain problem by writing code is very exciting
+                    and interesting. During my studies at college, institute I got acquainted with
+                    several programming languages and IDEs, chose the path of Full-Stack developer,
+                    and now I have studied Front-end developer tools. My goal is to learn JavaScript
+                    at a good enough level. I would like to work under the guidance of an
+                    experienced developer to gain practical experience.
+                  </p>
+                </div>
+              </section>
+              <section class="education__section section">
+                <div class="education__container container">
+                  <h2 class="title">EDUCATION</h2>
+                  <ul class="education__list">
+                    <li class="education__item">
+                      <div class="period__wrapper">
+                        <p class="period">Sep 2019 - Up to now</p>
+                        <ul class="position__list">
+                          <li class="position__item desc">Master’s (Sep 2021 - Up to now)</li>
+                          <li class="position__item desc">Bachelor’s (Sep 2019 - June 2021)</li>
+                        </ul>
+                      </div>
+                      <div class="organization__wrapper">
+                        <h3 class="organization">
+                          Ivano-Frankivsk National Technical University of Oil and Gas
+                        </h3>
+                        <p class="specialized desc">
+                          Automation and computer-integrated technologies
+                        </p>
+                      </div>
+                    </li>
+                    <li class="education__item">
+                      <div class="period__wrapper">
+                        <p class="period">Sep 2015 - June 2019</p>
+                        <p class="position desc">Junior specialist’s</p>
+                      </div>
+                      <div class="organization__wrapper">
+                        <h3 class="organization">Kalush Polytechnic College</h3>
+                        <p class="specialized desc">
+                          Maintenance of intelligent integrated systems
+                        </p>
+                        <p class="specialized desc">Specialist in information technologies</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="courser__section section">
+                <div class="courser__container container">
+                  <h2 class="title">COURSES</h2>
+                  <ul class="education__list">
+                    <li class="education__item">
+                      <div class="period__wrapper">
+                        <p class="period">May 2022 - Up to now</p>
+                      </div>
+                      <div class="organization__wrapper">
+                        <h3 class="organization">GoIT</h3>
+                        <p class="specialization desc">Full-Stack Developer</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="work_section section">
+                <div class="work_container container">
+                  <h2 class="title">WORK EXPERIANCE</h2>
+                  <ul class="education__list">
+                    <li class="education__item">
+                      <div class="period__wrapper">
+                        <p class="period">Jun 2021 - Oct 2021</p>
+                        <p class="position desc">
+                          Control panel operator of equipment for the manufacture of reinfo- rced
+                          concrete products
+                        </p>
+                      </div>
+                      <div class="organization__wrapper">
+                        <h3 class="organization">3 Бетони</h3>
+                        <p class="desc">
+                          Among the achievements in this position was the automation of accounting
+                          of daily use of raw materials in Excel.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="project__section section">
+                <div class="project__container container">
+                  <h2 class="title">PROJECTS</h2>
+                  <ul class="project__all-list">
+                    <li class="project__all-item">
+                      <h3 class="subtitle">Front-end</h3>
+                      <ul class="project__list">
+                        <li class="project__item">
+                          <a
+                            class="project__link"
+                            href="https://savchyndd.github.io/team-project-ic/"
+                            target="_blank"
+                          >
+                            <img
+                              class="project__img"
+                              src="./img/ice-cream/ice-cream-main_desktop@3x.png"
+                              alt="Ice Cream"
+                              width="256"
+                              height="152"
+                            />
+                            <div class="preview__text-overlay">
+                              <h4 class="project__title">Ice Cream</h4>
+                              <p class="project__desc">
+                                Team project (one week hackathon). Performed the role of team
+                                leader. This project was realized by the best team with 9 students
+                                of GoIT School, after first module of Full Stack developer course.
+                                We used technologies we learned on course and then presented the
+                                finished product to other teams. We have learned teamplaing work,
+                                practised Scrum metodology and Agile filosofy, we used Trello for do
+                                tasks, provided code review and work with branches using Git.
+                              </p>
+                              <p class="project__desc--technoligy">
+                                Mobile-first adaptive landing page.
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="project__item">
+                          <a
+                            class="project__link"
+                            href="https://savchyndd.github.io/web-studio/"
+                            target="_blank"
+                          >
+                            <img
+                              class="project__img"
+                              src="./img/web-studio/web-studio-main_descktop@3x.png"
+                              alt="Web Studio"
+                              width="256"
+                              height="152"
+                            />
+                            <div class="preview__text-overlay">
+                              <h4 class="project__title">Web Studio</h4>
+                              <p class="project__desc">
+                                This project was realized during the first module of Full Stack
+                                developer course in GoIT School.
+                              </p>
+                              <p class="project__desc--technoligy">
+                                Mobile-first adaptive web-site with portfolio.
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="project__item">
+                          <a
+                            class="project__link"
+                            href="https://savchyndd.github.io/goit-test-drive/"
+                            target="_blank"
+                          >
+                            <img
+                              src="./img/banderogus/banderogus-main_desktop@3x.png"
+                              alt="Banderogus"
+                              width="256"
+                              height="152"
+                            />
+                            <div class="preview__text-overlay">
+                              <h4 class="project__title">Banderogus</h4>
+                              <p class="project__desc">
+                                This project was implemented during the passage of a week-long
+                                marathon test drive was performed in Figma, a landing page design
+                                was created according to the backlog, landing pages were created
+                                using HTML and CSS, a JS script for modal windows was written,
+                                Netify created the ability to send an email with a name and email,
+                                and QA testing of the site.
+                              </p>
+                              <p class="project__desc--technoligy">landing page.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="project__item">
+                          <a
+                            class="project__link"
+                            href="https://savchyndd.github.io/goit-britlex/"
+                            target="_blank"
+                          >
+                            <img
+                              src="./img/britlix/britlix-main_desktop@3x.png"
+                              alt="Britlix"
+                              width="256"
+                              height="152"
+                            />
+                            <div class="preview__text-overlay">
+                              <h4 class="project__title">Britlix</h4>
+                              <p class="project__desc">
+                                Website for online English language school. This project was
+                                realized during the first module of Full Stack developer course in
+                                GoIT School.
+                              </p>
+                              <p class="project__desc--technoligy">landing page.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="project__item">
+                          <a
+                            class="project__link"
+                            href="https://savchyndd.github.io/seven-wonders-world/"
+                            target="_blank"
+                          >
+                            <img
+                              src="./img/7wotw/7wotw-main_desktop@3x.png"
+                              alt="7 wonders of the world"
+                              width="256"
+                              height="152"
+                            />
+                            <div class="preview__text-overlay">
+                              <h4 class="project__title">7 wonders of the world</h4>
+                              <p class="project__desc">
+                                A multi-page site about the seven wonders of the world. The first
+                                project on HTML that I made in the process of performing one of the
+                                laboratory works while studying at college, the task was to get
+                                acquainted and perform a mini project on HTML. The project is made
+                                on pure HTML for writing used documentation and articles.
+                              </p>
+                              <p class="project__desc--technoligy">Multi-page, only HTML.</p>
+                            </div>
+                          </a>
+                        </li>
                       </ul>
-                    </div>
-                    <div class="organization__wrapper">
-                      <h3 class="organization">
-                        Ivano-Frankivsk National Technical University of Oil and Gas
-                      </h3>
-                      <p class="specialized desc">
-                        Automation and computer-integrated technologies
-                      </p>
-                    </div>
-                  </li>
-                  <li class="education__item">
-                    <div class="period__wrapper">
-                      <p class="period">Jan 2017 - Mar 2020</p>
-                      <p class="position desc">Midle specialist</p>
-                    </div>
-                    <div class="organization__wrapper">
-                      <h3 class="organization">Kalush Polytechnic College</h3>
-                      <p class="specialized desc">Maintenance of intelligent integrated systems</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <section class="courser__section section">
-              <div class="courser__container container">
-                <h2 class="title">COURSES</h2>
-                <ul class="education__list">
-                  <li class="education__item">
-                    <div class="period__wrapper">
-                      <p class="period">May 2022 - Apr 2023</p>
-                    </div>
-                    <div class="organization__wrapper">
-                      <h3 class="organization">GoIT</h3>
-                      <p class="specialization desc">Full-Stack Developer</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <section class="work_section section">
-              <div class="work_container container">
-                <h2 class="title">WORK EXPERIANCE</h2>
-                <ul class="education__list">
-                  <li class="education__item">
-                    <div class="period__wrapper">
-                      <p class="period">Jun 2021 - Oct 2021</p>
-                      <p class="position desc">
-                        Control panel operator of equipment for the manufacture of reinfo- rced
-                        concrete products
-                      </p>
-                    </div>
-                    <div class="organization__wrapper">
-                      <h3 class="organization">3 Бетони</h3>
-                      <p class="desc">
-                        Among the achievements in this position was the automation of accounting of
-                        daily use of raw materials in Excel.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <section class="project__section section">
-              <div class="project__container container">
-                <h2 class="title">PROJECTS</h2>
-                <ul class="project__all-list">
-                  <li class="project__all-item">
-                    <h3 class="subtitle">Front-end</h3>
-                    <ul class="project__list">
-                      <li class="project__item">
-                        <a
-                          class="project__link"
-                          href="https://savchyndd.github.io/team-project-ic/"
-                          target="_blank"
-                        >
-                          <img
-                            class="project__img"
-                            src="./img/ice-cream/ice-cream-main_desktop@3x.png"
-                            alt="Ice Cream"
-                            width="256"
-                            height="152"
-                          />
-                          <div class="preview__thumb-img">
-                            <h4 class="project__title">Ice Cream</h4>
-                            <p class="project__desc">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, rerum.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="project__item">
-                        <a
-                          class="project__link"
-                          href="https://savchyndd.github.io/web-studio/"
-                          target="_blank"
-                        >
-                          <img
-                            class="project__img"
-                            src="./img/web-studio/web-studio-main_descktop@3x.png"
-                            alt="Web Studio"
-                            width="256"
-                            height="152"
-                          />
-                          <div class="preview__thumb-img">
-                            <h4 class="project__title">Web Studio</h4>
-                            <p class="project__desc">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, rerum.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="project__item">
-                        <a
-                          class="project__link"
-                          href="https://savchyndd.github.io/goit-test-drive/"
-                          target="_blank"
-                        >
-                          <img
-                            src="./img/banderogus/banderogus-main_desktop@3x.png"
-                            alt="Banderogus"
-                            width="256"
-                            height="152"
-                          />
-                          <div class="preview__thumb-img">
-                            <h4 class="project__title">Banderogus</h4>
-                            <p class="project__desc">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, rerum.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="project__item">
-                        <a
-                          class="project__link"
-                          href="https://savchyndd.github.io/goit-britlex/"
-                          target="_blank"
-                        >
-                          <img
-                            src="./img/britlix/britlix-main_desktop@3x.png"
-                            alt="Britlix"
-                            width="256"
-                            height="152"
-                          />
-                          <div class="preview__thumb-img">
-                            <h4 class="project__title">Britlix</h4>
-                            <p class="project__desc">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, rerum.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="project__item">
-                        <a class="project__link" href="#" target="_blank">
-                          <img
-                            src="./img/7wotw/7wotw-main_desktop@3x.png"
-                            alt="7 wonders of the world"
-                            width="256"
-                            height="152"
-                          />
-                          <div class="preview__thumb-img">
-                            <h4 class="project__title">7 wonders of the world</h4>
-                            <p class="project__desc">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, rerum.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <!-- <li class="project__all-item">
-                    <h3 class="subtitle">Design</h3>
-                    <ul class="project__list">
-                      <li class="project__item">
-                        <a class="project__link" href="#">
-                          <h4 class="project__title">Smart home</h4>
-                          <p class="project__desc"></p>
-                        </a>
-                      </li>
-                      <li class="project__item">
-                        <a class="project__link" href="#">
-                          <h4 class="project__title">Banderogus</h4>
-                          <p class="project__desc"></p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="project__all-item">
-                    <h3 class="subtitle">Other</h3>
-                    <ul class="project__list">
-                      <li class="project__item">
-                        <a class="project__link" href="#">
-                          <h4 class="project__title">Oscilograph</h4>
-                          <p class="project__desc"></p>
-                        </a>
-                      </li>
-                      <li class="project__item">
-                        <a class="project__link" href="#">
-                          <h4 class="project__title">beyby bed</h4>
-                          <p class="project__desc"></p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li> -->
-                </ul>
-              </div>
-            </section>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <!-- <section class="project__section-min section">
+                <div class="project__container-min container">
+                  <h2 class="title">PROJECTS</h2>
+                  <ol class="project__list-min">
+                    <li class="project__item-min">
+                      <a
+                        class="project__link-min"
+                        href="https://savchyndd.github.io/team-project-ic/"
+                        target="_blank"
+                      >
+                        <div class="project-name__wrapper">
+                          <h3 class="project-name">Ice-cream</h3>
+                          <p class="project-skill">HTML | CSS | JavaScript</p>
+                        </div>
+                        <p class="project__desc">
+                          Team project (one week hackathon). Performed the role of team leader. This
+                          project is mobile-first adaptive landing page of the manufacture of
+                          ice-cream.
+                        </p>
+                      </a>
+                    </li>
+
+                    <li class="project__item-min">
+                      <a
+                        class="project__link-min"
+                        href="https://savchyndd.github.io/team-project-ic/"
+                        target="_blank"
+                      >
+                        <div class="project-name__wrapper">
+                          <h3 class="project-name">Web Studio</h3>
+                          <p class="project-skill">HTML | CSS | JavaScript</p>
+                        </div>
+                        <p class="project__desc">
+                          This project was realized during the first module of Full Stack developer
+                          course in GoIT School. This project is mobile-first adaptive web-site with
+                          portfolio.
+                        </p>
+                      </a>
+                    </li>
+                    <li class="project__item-min">
+                      <a
+                        class="project__link-min"
+                        href="https://savchyndd.github.io/team-project-ic/"
+                        target="_blank"
+                      >
+                        <div class="project-name__wrapper">
+                          <h3 class="project-name">Banderogus</h3>
+                          <p class="project-skill">HTML | CSS | JavaScript | Figma</p>
+                        </div>
+                        <p class="project__desc">
+                          This project was implemented during the passage of a week-long marathon
+                          test drive. This project is landing page.
+                        </p>
+                      </a>
+                    </li>
+                    <li class="project__item-min">
+                      <a
+                        class="project__link-min"
+                        href="https://savchyndd.github.io/team-project-ic/"
+                        target="_blank"
+                      >
+                        <div class="project-name__wrapper">
+                          <h3 class="project-name">Britlix</h3>
+                          <p class="project-skill">HTML | CSS | JavaScript</p>
+                        </div>
+                        <p class="project__desc">
+                          This project was realized during the first module of Full Stack developer
+                          course in GoIT School. This project is landing page.
+                        </p>
+                      </a>
+                    </li>
+                    <li class="project__item-min">
+                      <a
+                        class="project__link-min"
+                        href="https://savchyndd.github.io/team-project-ic/"
+                        target="_blank"
+                      >
+                        <div class="project-name__wrapper">
+                          <h3 class="project-name">7 wonders of the world</h3>
+                          <p class="project-skill">HTML | Notepad</p>
+                        </div>
+                        <p class="project__desc">
+                          The first project on HTML that I made in the process of performing one of
+                          the laboratory works while studying at college, the task was to get
+                          acquainted and perform a mini project on HTML. The project is made on pure
+                          HTML for writing used documentation and articles. This project is only
+                          HTML multi-page.
+                        </p>
+                      </a>
+                    </li>
+                    <li class="project__item-min">
+                      <a
+                        class="project__link-min"
+                        href="https://savchyndd.github.io/team-project-ic/"
+                        target="_blank"
+                      >
+                        <div class="project-name__wrapper">
+                          <h3 class="project-name">My resume</h3>
+                          <p class="project-skill">HTML | СSS</p>
+                        </div>
+                        <p class="project__desc">
+                          My website resume. This project is landing page.
+                        </p>
+                      </a>
+                    </li>
+                  </ol>
+                </div>
+              </section> -->
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer></footer>
+      </main>
+    </div>
   </body>
 </html>
