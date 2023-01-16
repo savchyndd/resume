@@ -230,11 +230,13 @@ h4 {
   margin-right: 12px;
 }
 
-.skill__list {
+.skill__list,
+.languages__item {
   list-style: inside;
 }
 
-.skill__item::marker {
+.skill__item::marker,
+.languages__item::marker {
   color: var(--orange-color);
 }
 
@@ -439,4 +441,9 @@ h4 {
 
 .project__desc {
   font-size: 18px;
+}
+
+.project__desc--technoligy {
+  color: rgb(251, 109, 58);
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */

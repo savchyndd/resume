@@ -52,10 +52,12 @@
 }
 
 // Tech and soft skill list
-.skill__list {
+.skill__list,
+.languages__item {
     list-style: inside;
 }
 
-.skill__item::marker {
+.skill__item::marker,
+.languages__item::marker {
     color: var(--orange-color);
 }
